@@ -1,0 +1,162 @@
+/* Slider */
+/* 追加 */
+#apDots{
+	margin:0 auto;
+	width:960px;
+	position: relative;
+		height:40px;
+}
+#apDots	.slick-dots{
+	width:960px;
+	position: absolute;
+	top:10px;
+}
+.slick-dots li.slick-active button:before{
+	color:#92D45C!important;
+	opacity: 1!important
+}
+/*ここまで*/
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+#kv .inner{
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+}
+#kv { height: 480px; background-color: #ddd; overflow: hidden;}
+#kv .banner { width: 960px; height: 480px; background-color: #eee;}
+
+.sliderArea {
+    position: relative;
+}
+
+.bx-viewport { overflow: visible!important;}
+.bx-wrapper img { max-width: 100%; display: inline!important;}
+.sliderArea { position: relative; }
+.sliderArea:before, .sliderArea:after { display: block; width: 962px; height: 100%; background-color: rgba(0,0,0,0.5); top: 0;  content: ''; z-index: 900; position: absolute;}
+.sliderArea:before { left: -962px;}
+.sliderArea:after { right: -962px;}
+
+/*  default control */
+.sliderArea .bx-wrapper .bx-controls-direction a { margin-top: -20px; width: 40px; height: auto; background: none; opacity: 0.7;}
+.sliderArea .bx-wrapper .bx-prev { left: 10px;}
+.sliderArea .bx-wrapper .bx-next { right: 10px;}
+/* default pager */
+.sliderArea .bx-wrapper .bx-pager { bottom: 0px;}
+.sliderArea .bx-wrapper .bx-pager.bx-default-pager a { background-color: #868686; margin: 0 15px; height: 16px; width: 16px; border-radius: 8px;}
+.sliderArea .bx-wrapper .bx-pager.bx-default-pager a:hover, .sliderArea .bx-wrapper .bx-pager.bx-default-pager a.active { background-color: #ff9900;}
+/* custom pager */
+.sliderArea .pager { overflow: hidden;}
+.sliderArea .pager a { color: #333; float: left; display: block; position: relative; float: left;}
+.sliderArea .pager a .on { visibility: hidden; position: absolute; top: 0; left: 0; color: #f00;}
+.sliderArea .pager a.active .on, .sliderArea .pager a:hover .on { visibility: visible;}
